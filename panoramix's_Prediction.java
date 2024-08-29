@@ -36,5 +36,5 @@ public class panoramixs_Prediction{
         return true;
     }
 
-
+// Solution by piyush patel codes https://codeforces.com/profile/piyushpatelcodes   https://www.linkedin.com/in/piyushpatelcodes/
 }
