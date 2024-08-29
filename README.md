@@ -114,6 +114,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/word.java">Code</a></td>
 </tr>                
 
+<tr>
+<td>13</td>
+<td><a href="https://codeforces.com/problemset/problem/281/A" target="_blank">Word Capitalization</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/word_Capitalization.java">Code</a></td>
+</tr>   
 
 </table>
   </center>
