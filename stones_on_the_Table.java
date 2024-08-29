@@ -18,5 +18,7 @@ public class stones_on_the_Table{
         scanner.close();
     }
 
+    // Solution by piyush patel codes https://codeforces.com/profile/piyushpatelcodes   https://www.linkedin.com/in/piyushpatelcodes/
+
 
 }
