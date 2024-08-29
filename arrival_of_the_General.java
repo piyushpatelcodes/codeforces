@@ -41,3 +41,5 @@ public class arrival_of_the_General{
 
 
 }
+
+// Solution by piyush patel codes https://codeforces.com/profile/piyushpatelcodes   https://www.linkedin.com/in/piyushpatelcodes/
