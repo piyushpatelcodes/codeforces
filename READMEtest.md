@@ -1,8 +1,7 @@
 # 100-questions-of-codeforces
 
 *Note : Some Solution Links are not updated in the table*
-
-This is my Solutions for the Codeforces Problems which i have done for practice purpose and enhancing my DSA & Competitive Programming Skills.
+These are my Submissions / Solutions for the Codeforces Problems which i have done for practice purpose and enhancing my DSA & Competitive Programming Skills.
 
 
 <html>
@@ -16,30 +15,85 @@ This is my Solutions for the Codeforces Problems which i have done for practice 
 <th>Difficulty Level</th>
   <th>Solution</th>
 </tr>
+
 <tr>
 <td>1</td>
-<td><a href="http://codeforces.com/problemset/problem/69/A" target="_blank">Young Physicist</a></td>
+<td><a href="https://codeforces.com/contest/231/problem/A" target="_blank">Team</a></td>
 <td>Codeforces</td>
 <td>1</td>
-<td><a href="https://github.com/ankitvashisht12/100-questions-of-codeforces/blob/master/young_physicist.cpp">Code</a></td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/team.java">Code</a></td>
 </tr>
+
 <tr>
 <td>2</td>
+<td><a href="https://codeforces.com/contest/231/problem/B" target="_blank"> Magic, Wizardry and Wonders</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/Magic_Wizardry_and_Wonders.java">Code</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://codeforces.com/contest/231/problem/B" target="_blank">To Add or Not to Add</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/to_Add_or_Not_to_Add.java">Code</a></td>
+</tr>
+
+
+<tr>
+<td>4</td>
+<td><a href="https://codeforces.com/contest/231/problem/D" target="_blank">Magic Box</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/magic_Box.java">Code</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://codeforces.com/contest/228/problem/A" target="_blank">Is your horseshoe on the other hoof?</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/is_your_horseshoe_on_the_other_hoof.java">Code</a></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://codeforces.com/contest/228/problem/A" target="_blank">Young Physicist</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/young_Physicist.java">Code</a></td>
+</tr>
+
+
+
+<tr>
+<td>7</td>
 <td><a href="http://codeforces.com/problemset/problem/263/A" target="_blank">Beautiful Matrix</a></td>
 <td>Codeforces</td>
 <td>1</td>
-<td><a href="https://github.com/ankitvashisht12/100-questions-of-codeforces/blob/master/beautiful_matrix.cpp">Code</a></td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/beautiful_Matrix.java">Code</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="http://codeforces.com/problemset/problem/266/B" target="_blank">Queue at the School</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/queue_at_the_School.java">Code</a></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://codeforces.com/contest/32/problem/B" target="_blank">Borze</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/borze.java">Code</a></td>
 </tr>
   
                         
 
-<tr>
-<td>100</td>
-<td><a href="http://codeforces.com/problemset/problem/260/A" target="_blank">Adding Digits</a></td>
-<td>Codeforces</td>
-<td>4</td>
-<td><a href="">Code</a></td>
-</tr>
+
 </table>
   </center>
   </body>
