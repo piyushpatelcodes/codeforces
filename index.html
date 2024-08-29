@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -6,9 +7,49 @@
             background-color: #f4f4f9;
             color: #333;
         }
-        table {
+        .container {
             width: 80%;
             margin: 20px auto;
+            text-align: center;
+        }
+        .title {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #4CAF50;
+        }
+        .search-bar {
+            width: 80%;
+            padding: 10px;
+            margin: 20px auto;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+            font-size: 16px;
+        }
+        .suggestions {
+            list-style: none;
+            padding: 0;
+            margin-top: 0;
+            border: 1px solid #ddd;
+            max-height: 150px;
+            overflow-y: auto;
+            width: 80%;
+            margin: 10px auto;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+            background-color: #fff;
+            text-align: left;
+            display: none; /* Hidden by default */
+        }
+        .suggestions li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .suggestions li:hover {
+            background-color: #f1f1f1;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
             border-collapse: collapse;
             box-shadow: 0 2px 3px rgba(0,0,0,0.1);
             background-color: #fff;
@@ -32,21 +73,14 @@
         a:hover {
             text-decoration: underline;
         }
-        .container {
-            width: 100%;
-            text-align: center;
-        }
-        .title {
-            font-size: 24px;
-            margin: 20px 0;
-            color: #4CAF50;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title">Competitive Programming Solutions</div>
-        <table>
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search problems..." oninput="filterTable()">
+        <ul id="suggestions" class="suggestions"></ul>
+        <table id="problemsTable">
             <tr>
                 <th>ID</th>
                 <th>Problem Name</th>
@@ -63,7 +97,7 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td><a href="https://codeforces.com/contest/231/problem/B" target="_blank"> Magic, Wizardry and Wonders</a></td>
+                <td><a href="https://codeforces.com/contest/231/problem/B" target="_blank">Magic, Wizardry and Wonders</a></td>
                 <td>Codeforces</td>
                 <td>1</td>
                 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/Magic_Wizardry_and_Wonders.java">Code</a></td>
@@ -119,5 +153,57 @@
             </tr>
         </table>
     </div>
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+        const suggestions = document.getElementById('suggestions');
+        const problemsTable = document.getElementById('problemsTable');
+
+        function filterTable() {
+            const filter = searchBar.value.toLowerCase();
+            const rows = problemsTable.getElementsByTagName('tr');
+            const suggestionItems = [];
+
+            for (let i = 1; i < rows.length; i++) {
+                const problemName = rows[i].getElementsByTagName('td')[1].textContent.toLowerCase();
+                if (problemName.includes(filter.replace(/ /g, ''))) {
+                    rows[i].style.display = '';
+                    suggestionItems.push(problemName);
+                } else {
+                    rows[i].style.display = 'none';
+                }
+            }
+
+            if (filter === '') {
+                suggestions.style.display = 'none';
+            } else {
+                updateSuggestions(suggestionItems, filter);
+            }
+        }
+
+        function updateSuggestions(items, filter) {
+            suggestions.innerHTML = '';
+            const uniqueItems = [...new Set(items)];
+
+            uniqueItems.forEach(item => {
+                if (item.includes(filter.replace(/ /g, ''))) {
+                    const suggestion = document.createElement('li');
+                    suggestion.textContent = item;
+                    suggestion.onclick = () => {
+                        searchBar.value = suggestion.textContent;
+                        filterTable();
+                        suggestions.style.display = 'none';
+                    };
+                    suggestions.appendChild(suggestion);
+                }
+            });
+
+            if (suggestions.children.length > 0) {
+                suggestions.style.display = 'block';
+            } else {
+                suggestions.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
