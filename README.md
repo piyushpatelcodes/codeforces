@@ -89,6 +89,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td>1</td>
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/borze.java">Code</a></td>
 </tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://codeforces.com/contest/32/problem/B" target="_blank">Beautiful Year</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/beautiful_Year.java">Code</a></td>
+</tr>
   
                         
 
