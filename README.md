@@ -105,7 +105,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td>1</td>
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/lights_Out.java">Code</a></td>
 </tr>
-                        
+
+<tr>
+<td>12</td>
+<td><a href="https://codeforces.com/problemset/problem/59/A" target="_blank">Word</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/word.java">Code</a></td>
+</tr>                
 
 
 </table>
