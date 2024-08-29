@@ -16,3 +16,6 @@ public class ultra_Fast_Mathematician{
 
 
 }
+
+
+// Solution by piyush patel codes https://codeforces.com/profile/piyushpatelcodes   https://www.linkedin.com/in/piyushpatelcodes/
