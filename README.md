@@ -1,6 +1,5 @@
 # 100-questions-of-codeforces
 
-*Note : Some Solution Links are not updated in the table*
 These are my Submissions / Solutions for the Codeforces Problems which i have done for practice purpose and enhancing my DSA & Competitive Programming Skills.
 
 
