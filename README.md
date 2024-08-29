@@ -155,6 +155,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/ultra_Fast_Mathematician.java">Code</a></td>
 </tr>
 
+<tr>
+<td>18</td>
+<td><a href="https://codeforces.com/problemset/problem/233/A" target="_blank">Perfect Permutation</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/perfect_Permutation.java">Code</a></td>
+</tr>
+
 </table>
   </center>
   </body>
