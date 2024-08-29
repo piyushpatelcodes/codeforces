@@ -122,6 +122,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/word_Capitalization.java">Code</a></td>
 </tr>   
 
+<tr>
+<td>14</td>
+<td><a href="https://codeforces.com/problemset/problem/110/A" target="_blank">Nearly Lucky Number</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/nearly_Lucky_Number.java">Code</a></td>
+</tr>   
+
 </table>
   </center>
   </body>
