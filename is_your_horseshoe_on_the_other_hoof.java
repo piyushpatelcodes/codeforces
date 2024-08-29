@@ -17,3 +17,5 @@ public class a{
   sc.close();
   
   }}
+
+// Solution by piyush patel codes https://codeforces.com/submissions/piyushpatelcodes   https://www.linkedin.com/in/piyushpatelcodes/
