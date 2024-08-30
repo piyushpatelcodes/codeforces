@@ -211,6 +211,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/tram.java">Code</a></td>
 </tr>
 
+<tr>
+<td>25</td>
+<td><a href="https://codeforces.com/problemset/problem/339/A" target="_blank">Helpful Maths</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/helpful_Maths.java">Code</a></td>
+</tr>
+
 </table>
   </center>
   </body>
