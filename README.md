@@ -311,7 +311,7 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td>37</td>
 <td><a href="https://codeforces.com/contest/2010/problem/B" target="_blank">Three Brothers</a></td>
 <td>Codeforces</td>
-<td>2</td>
+<td>1</td>
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/three_Brothers.java">Code</a></td>
 </tr>
 
