@@ -1,16 +1,19 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class tram {
-    public static void main(String[] args) {
+public class a{
+    public static void main(String[] args){
+
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt(); 
-        
+        int n = scanner.nextInt();
+
+        //Approach 2
+
         int currentPassengers = 0;
         int maxPassengers = 0;
         
         for (int i = 0; i < n; i++) {
             int exits = scanner.nextInt(); 
-            int enters = scanner.nextInt(); 
+            int enters = scanner.nextInt();
             
             currentPassengers -= exits; 
             currentPassengers += enters; 
@@ -20,7 +23,31 @@ public class tram {
             }
         }
         
-        System.out.println(maxPassengers);
+        System.out.println(maxPassengers); 
         scanner.close();
+
+
+
+        // FAILED Mathematical Approach below
+        //
+        // int sumofMax=0;
+        // int sumofExits = 0;
+        
+        // for(int i=0; i<n; i++){
+        //     int exitNumbers = scanner.nextInt();
+        //     int enterNumbers = scanner.nextInt();
+
+        //     sumofMax += Math.max(exitNumbers, enterNumbers);
+        //     sumofExits += exitNumbers;
+
+        // }
+        // scanner.close();
+
+        // System.out.println((Math.abs(sumofMax - sumofExits)));
+        
+
     }
+
 }
+
+// Solution by piyush patel codes https://codeforces.com/profile/piyushpatelcodes   https://www.linkedin.com/in/piyushpatelcodes/
