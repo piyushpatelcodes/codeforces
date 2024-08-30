@@ -251,6 +251,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/soft_Drinking.java">Code</a></td>
 </tr>
 
+<tr>
+<td>30</td>
+<td><a href="https://codeforces.com/problemset/problem/133/A" target="_blank">HQ9+</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/hq9.java">Code</a></td>
+</tr>
+
 
 </table>
   </center>
