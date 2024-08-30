@@ -259,6 +259,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/hq9.java">Code</a></td>
 </tr>
 
+<tr>
+<td>31</td>
+<td><a href="https://codeforces.com/problemset/problem/112/A" target="_blank">Petya and Strings</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/petya_and_Strings.java">Code</a></td>
+</tr>
 
 </table>
   </center>
