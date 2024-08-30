@@ -299,6 +299,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/jzzhu_and_Children.java">Code</a></td>
 </tr>
 
+<tr>
+<td>36</td>
+<td><a href="https://codeforces.com/problemset/problem/165/A" target="_blank">Supercentral Point</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/supercentral_Point.java">Code</a></td>
+</tr>
+
 </table>
   </center>
   </body>
