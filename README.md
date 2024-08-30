@@ -203,6 +203,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/i_love_username.java">Code</a></td>
 </tr>
 
+<tr>
+<td>24</td>
+<td><a href="https://codeforces.com/problemset/problem/116/A" target="_blank">Tram</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/tram.java">Code</a></td>
+</tr>
 
 </table>
   </center>
