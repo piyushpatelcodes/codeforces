@@ -179,6 +179,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/drinks.java">Code</a></td>
 </tr>
 
+<tr>
+<td>21</td>
+<td><a href="https://codeforces.com/problemset/problem/148/A" target="_blank">Insomnia cure</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/insomnia_cure.java">Code</a></td>
+</tr>
+
 </table>
   </center>
   </body>
