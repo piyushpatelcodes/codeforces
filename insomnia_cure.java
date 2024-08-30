@@ -70,3 +70,5 @@ public class insomnia_cure{
     }
 
 }
+
+// Solution by piyush patel codes https://codeforces.com/profile/piyushpatelcodes   https://www.linkedin.com/in/piyushpatelcodes/
