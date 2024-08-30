@@ -275,6 +275,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/bit.java">Code</a></td>
 </tr>
 
+<tr>
+<td>33</td>
+<td><a href="https://codeforces.com/problemset/problem/227/B" target="_blank">Effective Approach</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/effective_Approach.java">Code</a></td>
+</tr>
+
 </table>
   </center>
   </body>
