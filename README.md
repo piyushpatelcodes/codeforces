@@ -323,6 +323,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/petr_and_Book.java">Code</a></td>
 </tr>
 
+<tr>
+<td>39</td>
+<td><a href="https://codeforces.com/problemset/problem/224/A" target="_blank">Parallelepiped</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/parallelepiped.java">Code</a></td>
+</tr>
+
+
 
 </table>
   </center>
