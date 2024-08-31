@@ -374,6 +374,16 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>45</td>
+<td><a href="https://codeforces.com/problemset/problem/339/B" target="_blank">Xenia and Ringroad</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/xenia_and_Ringroad.java">Code</a></td>
+</tr>
+
+
+
 </table>
   </center>
   </body>
