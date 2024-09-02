@@ -498,6 +498,16 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/string_Task.java">Code</a></td>
 </tr>
 
+<tr>
+<td>58</td>
+<td><a href="https://codeforces.com/problemset/problem/221/A" target="_blank">Little Elephant and Function</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/little_Elephant_and_Function.java">Code</a></td>
+</tr>
+
+
+
 
 
 
