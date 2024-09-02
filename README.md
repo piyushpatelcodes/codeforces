@@ -422,6 +422,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sale.java">Code</a></td>
 </tr>
 
+<tr>
+<td>51</td>
+<td><a href="https://codeforces.com/problemset/problem/214/A" target="_blank">SaSystem of Equationsle</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/system_of_Equations.java">Code</a></td>
+</tr>
+
 </table>
   </center>
   </body>
