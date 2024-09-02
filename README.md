@@ -483,7 +483,7 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 <tr>
-<td>56</td>
+<td>57</td>
 <td><a href="https://codeforces.com/problemset/problem/96/A" target="_blank">(Problem 96-A) Football</a></td>
 <td>Codeforces</td>
 <td>2</td>
@@ -491,7 +491,7 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 <tr>
-<td>57</td>
+<td>58</td>
 <td><a href="https://codeforces.com/problemset/problem/118/A" target="_blank">String Task</a></td>
 <td>Codeforces</td>
 <td>2</td>
@@ -499,7 +499,7 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 <tr>
-<td>58</td>
+<td>59</td>
 <td><a href="https://codeforces.com/problemset/problem/221/A" target="_blank">Little Elephant and Function</a></td>
 <td>Codeforces</td>
 <td>2</td>
