@@ -482,6 +482,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/odd_One_Out.java">Code</a></td>
 </tr>
 
+<tr>
+<td>56</td>
+<td><a href="https://codeforces.com/problemset/problem/96/A" target="_blank">(Problem 96-A) Football</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/football96A.java">Code</a></td>
+</tr>
+
+
 
 
 </table>
