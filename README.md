@@ -454,6 +454,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/k_String.java">Code</a></td>
 </tr>
 
+<tr>
+<td>55</td>
+<td><a href="https://codeforces.com/problemset/problem/124/A" target="_blank">The Number of Positions</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/the_Number_of_Positions.java">Code</a></td>
+</tr>
+
 </table>
   </center>
   </body>
