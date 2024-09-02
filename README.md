@@ -424,10 +424,18 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 
 <tr>
 <td>51</td>
-<td><a href="https://codeforces.com/problemset/problem/214/A" target="_blank">SaSystem of Equationsle</a></td>
+<td><a href="https://codeforces.com/problemset/problem/214/A" target="_blank">System of Equations</a></td>
 <td>Codeforces</td>
 <td>2</td>
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/system_of_Equations.java">Code</a></td>
+</tr>
+
+<tr>
+<td>52</td>
+<td><a href="https://codeforces.com/problemset/problem/149/A" target="_blank">Business Trip</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/business_Trip.java">Code</a></td>
 </tr>
 
 </table>
