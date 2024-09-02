@@ -391,6 +391,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/magic_Numbers.java">Code</a></td>
 </tr>
 
+<tr>
+<td>47</td>
+<td><a href="https://codeforces.com/problemset/problem/41/A" target="_blank">Translation</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/translation.java">Code</a></td>
+</tr>
+
 
 </table>
   </center>
