@@ -1,603 +1,1365 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+  <head>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            text-align: center;
-        }
-        .title {
-            font-size: 24px;
-            margin: 20px 0;
-            color: #4CAF50;
-        }
-        .search-bar {
-            width: 80%;
-            padding: 10px;
-            margin: 20px auto;
-            border: 2px solid #4CAF50;
-            border-radius: 5px;
-            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-            font-size: 16px;
-        }
-        .suggestions {
-            list-style: none;
-            padding: 0;
-            margin-top: 0;
-            border: 1px solid #ddd;
-            max-height: 150px;
-            overflow-y: auto;
-            width: 80%;
-            margin: 10px auto;
-            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-            background-color: #fff;
-            text-align: left;
-            display: none; /* Hidden by default */
-        }
-        .suggestions li {
-            padding: 10px;
-            cursor: pointer;
-        }
-        .suggestions li:hover {
-            background-color: #f1f1f1;
-        }
-        table {
-            width: 100%;
-            margin-top: 20px;
-            border-collapse: collapse;
-            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-            background-color: #fff;
-        }
-        th, td {
-            padding: 12px 20px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        margin-bottom: 5%;
+      }
+      .title {
+        font-size: 24px;
+        margin: 20px 0;
+        padding-top: 10%;
+        color: #4caf50;
+      }
+      .search-bar {
+        width: 80%;
+        padding: 10px;
+        margin: 20px auto;
+        border: 2px solid #4caf50;
+        border-radius: 5px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+      }
+      .suggestions {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+        border: 1px solid #ddd;
+        max-height: 150px;
+        overflow-y: auto;
+        width: 80%;
+        margin: 10px auto;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        text-align: left;
+        display: none; /* Hidden by default */
+      }
+      .suggestions li {
+        padding: 10px;
+        cursor: pointer;
+      }
+      .suggestions li:hover {
+        background-color: #f1f1f1;
+      }
+      table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+      th,
+      td {
+        padding: 12px 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      a {
+        color: #3498db;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+     
     </style>
-</head>
-<body>
-    <div class="container">
-        <div class="title">Competitive Programming Solutions</div>
-        <p>These are my Submissions / Solutions for the Codeforces Problems which i have done for practice purpose and enhancing my DSA & Competitive Programming Skills.</p>
-        <input type="text" id="searchBar" class="search-bar" placeholder="Search problems..." oninput="filterTable()">
-        <ul id="suggestions" class="suggestions"></ul>
-        <table id="problemsTable">
-            <tr>
-                <th>ID</th>
-                <th>Problem Name</th>
-                <th>Online Judge</th>
-                <th>Difficulty Level</th>
-                <th>Solution</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td><a href="https://codeforces.com/contest/231/problem/A" target="_blank">Team</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/team.java">Code</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td><a href="https://codeforces.com/contest/231/problem/B" target="_blank">Magic, Wizardry and Wonders</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/Magic_Wizardry_and_Wonders.java">Code</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td><a href="https://codeforces.com/contest/231/problem/B" target="_blank">To Add or Not to Add</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/to_Add_or_Not_to_Add.java">Code</a></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td><a href="https://codeforces.com/contest/231/problem/D" target="_blank">Magic Box</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/magic_Box.java">Code</a></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td><a href="https://codeforces.com/contest/228/problem/A" target="_blank">Is your horseshoe on the other hoof?</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/is_your_horseshoe_on_the_other_hoof.java">Code</a></td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td><a href="https://codeforces.com/contest/228/problem/A" target="_blank">Young Physicist</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/young_Physicist.java">Code</a></td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td><a href="http://codeforces.com/problemset/problem/263/A" target="_blank">Beautiful Matrix</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/beautiful_Matrix.java">Code</a></td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td><a href="http://codeforces.com/problemset/problem/266/B" target="_blank">Queue at the School</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/queue_at_the_School.java">Code</a></td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td><a href="https://codeforces.com/contest/32/problem/B" target="_blank">Borze</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/borze.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>10</td>
-                <td><a href="https://codeforces.com/contest/32/problem/B" target="_blank">Beautiful Year</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/beautiful_Year.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>11</td>
-                <td><a href="https://codeforces.com/problemset/problem/275/A" target="_blank">Lights Out</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/lights_Out.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>12</td>
-                <td><a href="https://codeforces.com/problemset/problem/59/A" target="_blank">Word</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/word.java">Code</a></td>
-            </tr>  
-
-            <tr>
-                <td>13</td>
-                <td><a href="https://codeforces.com/problemset/problem/281/A" target="_blank">Word Capitalization</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/word_Capitalization.java">Code</a></td>
-            </tr>  
-
-            <tr>
-                <td>14</td>
-                <td><a href="https://codeforces.com/problemset/problem/110/A" target="_blank">Nearly Lucky Number</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/nearly_Lucky_Number.java">Code</a></td>
-            </tr> 
-
-
-            <tr>
-                <td>15</td>
-                <td><a href="https://codeforces.com/problemset/problem/266/A" target="_blank">Stones on the Table</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/stones_on_the_Table.java">Code</a></td>
-            </tr>  
-
-            <tr>
-                <td>16</td>
-                <td><a href="https://codeforces.com/problemset/problem/80/A" target="_blank">Panoramix's Prediction</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/panoramix's_Prediction.java">Code</a></td>
-            </tr>   
-
-            <tr>
-                <td>17</td>
-                <td><a href="https://codeforces.com/problemset/problem/61/A" target="_blank">Ultra-Fast Mathematician</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/ultra_Fast_Mathematician.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>18</td>
-                <td><a href="https://codeforces.com/problemset/problem/233/A" target="_blank">Perfect Permutation</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/perfect_Permutation.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>19</td>
-                <td><a href="https://codeforces.com/problemset/problem/144/A" target="_blank">Arrival of the General</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/arrival_of_the_General.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>20</td>
-                <td><a href="https://codeforces.com/problemset/problem/200/B" target="_blank">Drinks</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/drinks.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>21</td>
-                <td><a href="https://codeforces.com/problemset/problem/148/A" target="_blank">Insomnia cure</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/insomnia_cure.java">Code</a></td>
-            </tr>
-
-            
-            <tr>
-                <td>22</td>
-                <td><a href="https://codeforces.com/problemset/problem/248/A" target="_blank">Cupboards</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/cupboards.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>23</td>
-                <td><a href="https://codeforces.com/problemset/problem/155/A" target="_blank">I_love_\%username\%</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/i_love_username.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>24</td>
-                <td><a href="https://codeforces.com/problemset/problem/116/A" target="_blank">Tram</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/tram.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>25</td>
-                <td><a href="https://codeforces.com/problemset/problem/339/A" target="_blank">Helpful Maths</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/helpful_Maths.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>26</td>
-                <td><a href="https://codeforces.com/problemset/problem/71/A" target="_blank">Way Too Long Words</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/way_Too_Long_Words.java">Code</a></td>
-            </tr>
-
-            <tr>
-                <td>27</td>
-                <td><a href="https://codeforces.com/problemset/problem/236/A" target="_blank">Boy or Girl</a></td>
-                <td>Codeforces</td>
-                <td>1</td>
-                <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/boy_or_Girl.java">Code</a></td>
-            </tr>
-
-            <tr>
-<td>28</td>
-<td><a href="https://codeforces.com/problemset/problem/141/A" target="_blank">Amusing Joke</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/amusing_Joke.java">Code</a></td>
-</tr>
-
-            <tr>
-<td>29</td>
-<td><a href="https://codeforces.com/problemset/problem/151/A" target="_blank">Soft Drinking</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/soft_Drinking.java">Code</a></td>
-</tr>
-
-            <tr>
-<td>30</td>
-<td><a href="https://codeforces.com/problemset/problem/133/A" target="_blank">HQ9+</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/hq9.java">Code</a></td>
-</tr>
-
-
-            <tr>
-<td>31</td>
-<td><a href="https://codeforces.com/problemset/problem/112/A" target="_blank">Petya and Strings</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/petya_and_Strings.java">Code</a></td>
-</tr>
-
-            <tr>
-<td>32</td>
-<td><a href="https://codeforces.com/problemset/problem/282/A" target="_blank">Bit++</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/bit.java">Code</a></td>
-</tr>
-            
-<tr>
-<td>33</td>
-<td><a href="https://codeforces.com/problemset/problem/227/B" target="_blank">Effective Approach</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/effective_Approach.java">Code</a></td>
-</tr>
-
-
-<tr>
-<td>34</td>
-<td><a href="https://codeforces.com/problemset/problem/272/A" target="_blank">Dima and Friends</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/dima_And_Friends.java">Code</a></td>
-</tr>
-
-            <tr>
-<td>35</td>
-<td><a href="https://codeforces.com/problemset/problem/450/A" target="_blank">Jzzhu and Children</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/jzzhu_and_Children.java">Code</a></td>
-</tr>
-
-<tr>
-<td>36</td>
-<td><a href="https://codeforces.com/problemset/problem/165/A" target="_blank">Supercentral Point</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/supercentral_Point.java">Code</a></td>
-</tr>
-            
-
-<tr>
-<td>37</td>
-<td><a href="https://codeforces.com/contest/2010/problem/B" target="_blank">Three Brothers</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/three_Brothers.java">Code</a></td>
-</tr>
-
-            <tr>
-<td>38</td>
-<td><a href="https://codeforces.com/problemset/problem/139/A" target="_blank">Petr and Book</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/petr_and_Book.java">Code</a></td>
-</tr>
-
-            <tr>
-<td>39</td>
-<td><a href="https://codeforces.com/problemset/problem/224/A" target="_blank">Parallelepiped</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/parallelepiped.java">Code</a></td>
-</tr>
-
-            <tr>
-<td>40</td>
-<td><a href="https://codeforces.com/problemset/problem/34/A" target="_blank">Reconnaissance 2</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/reconnaissance_2.java">Code</a></td>
-</tr>
-
-            
-<tr>
-<td>41</td>
-<td><a href="https://codeforces.com/problemset/problem/318/A" target="_blank">Even Odds</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/even_Odds.java">Code</a></td>
-</tr>
-            
-<tr>
-<td>42</td>
-<td><a href="https://codeforces.com/problemset/problem/205/A" target="_blank">Little Elephant and Rozdil</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/little_Elephant_and_Rozdil.java">Code</a></td>
-</tr>
-            
-         <tr>
-<td>43</td>
-<td><a href="https://codeforces.com/problemset/problem/199/A" target="_blank">Hexadecimal's theorem</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/hexadecimal_Theorem.java">Code</a></td>
-</tr>
-
-
-    <tr>
-<td>44</td>
-<td><a href="https://codeforces.com/problemset/problem/352/A" target="_blank">Jeff and Digits</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/jeff_and_Digits.java">Code</a></td>
-</tr>
-
-    <tr>
-<td>45</td>
-<td><a href="https://codeforces.com/problemset/problem/339/B" target="_blank">Xenia and Ringroad</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/xenia_and_Ringroad.java">Code</a></td>
-</tr>
-
-
-            <tr>
-<td>46</td>
-<td><a href="https://codeforces.com/problemset/problem/320/A" target="_blank">Magic Numbers</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/magic_Numbers.java">Code</a></td>
-</tr>
-
-          <tr>
-<td>47</td>
-<td><a href="https://codeforces.com/problemset/problem/41/A" target="_blank">Translation</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/translation.java">Code</a></td>
-</tr>
-<tr>
-<td>48</td>
-<td><a href="https://codeforces.com/problemset/problem/43/A" target="_blank">Football</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/football.java">Code</a></td>
-</tr>
-            <tr>
-<td>49</td>
-<td><a href="https://codeforces.com/problemset/problem/215/A" target="_blank">Bicycle Chain</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/bicycle_Chain.java">Code</a></td>
-</tr>
-            <tr>
-<td>50</td>
-<td><a href="https://codeforces.com/problemset/problem/34/B" target="_blank">Sale</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sale.java">Code</a></td>
-</tr>
-
-            <tr>
-<td>51</td>
-<td><a href="https://codeforces.com/problemset/problem/214/A" target="_blank">System of Equations</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/system_of_Equations.java">Code</a></td>
-</tr>
-
-            <tr>
-<td>52</td>
-<td><a href="https://codeforces.com/problemset/problem/149/A" target="_blank">Business Trip</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/business_Trip.java">Code</a></td>
-</tr>
-<tr>
-<td>53</td>
-<td><a href="https://codeforces.com/problemset/problem/208/A" target="_blank">Dubstep</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/dubstep.java">Code</a></td>
-</tr>
-<tr>
-<td>54</td>
-<td><a href="https://codeforces.com/problemset/problem/219/A" target="_blank">K-String</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/k_String.java">Code</a></td>
-</tr>
-       <tr>
-<td>55</td>
-<td><a href="https://codeforces.com/problemset/problem/124/A" target="_blank">The Number of Positions</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/the_Number_of_Positions.java">Code</a></td>
-</tr>
-            <tr>
-<td>56</td>
-<td><a href="https://codeforces.com/contest/1916/problem/A" target="_blank">Odd One Out</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/odd_One_Out.java">Code</a></td>
-</tr>
-
-
-            
-            
-            
-
-            
-            
+  </head>
+  <body>
     
     
+    
+    <div  class="container">
+        <nav class="navigation-card">
+            <a href="#" class="tab">
+              <svg
+                class="svgIcon"
+                viewBox="0 0 104 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
+                  stroke="black"
+                  stroke-width="7"
+                ></path>
+              </svg>
+            </a>
+      
+            <a href="https://www.linkedin.com/in/piyushpatelcodes/" class="tab">
+              <svg
+                width="104"
+                height="100"
+                viewBox="0 0 104 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="21.5"
+                  y="3.5"
+                  width="60"
+                  height="60"
+                  rx="30"
+                  stroke="black"
+                  stroke-width="7"
+                ></rect>
+                <g clip-path="url(#clip0_41_27)">
+                  <mask
+                    id="mask0_41_27"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="61"
+                    width="104"
+                    height="52"
+                  >
+                    <path
+                      d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z"
+                      fill="white"
+                    ></path>
+                  </mask>
+                  <g mask="url(#mask0_41_27)">
+                    <path
+                      d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z"
+                      fill="black"
+                    ></path>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_41_27">
+                    <rect
+                      width="104"
+                      height="39"
+                      fill="white"
+                      transform="translate(0 61)"
+                    ></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+      
+            <a  href="calendar.html" class="tab">
+              <svg
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+      >
+          <!-- Outer rounded rectangle -->
+          <rect
+              x="10"
+              y="10"
+              width="84"
+              height="80"
+              rx="15"
+              stroke="black"
+              stroke-width="7"
+              fill="white"
+          ></rect>
+      
+          <!-- Top bar of the calendar -->
+          <rect
+              x="10"
+              y="10"
+              width="84"
+              height="20"
+              rx="5"
+              fill="black"
+          ></rect>
+      
+          <!-- Circles representing dates in the calendar -->
+          <circle cx="30" cy="45" r="4" fill="black"></circle>
+          <circle cx="50" cy="45" r="4" fill="black"></circle>
+          <circle cx="70" cy="45" r="4" fill="black"></circle>
+      
+          <circle cx="30" cy="65" r="4" fill="black"></circle>
+          <circle cx="50" cy="65" r="4" fill="black"></circle>
+          <circle cx="70" cy="65" r="4" fill="black"></circle>
+      
+          <circle cx="30" cy="85" r="4" fill="black"></circle>
+          <circle cx="50" cy="85" r="4" fill="black"></circle>
+          <circle cx="70" cy="85" r="4" fill="black"></circle>
+      
+          <!-- Calendar rings -->
+          <line x1="28" y1="10" x2="28" y2="30" stroke="white" stroke-width="3" stroke-linecap="round"></line>
+          <line x1="76" y1="10" x2="76" y2="30" stroke="white" stroke-width="3" stroke-linecap="round"></line>
+      </svg>
+      
+              
+            </a>
+      
+            <!-- calendar -->
+            <a href="#title" class="tab">
+              <svg
+                width="101"
+                height="114"
+                viewBox="0 0 101 114"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="46.1726"
+                  cy="46.1727"
+                  r="29.5497"
+                  transform="rotate(36.0692 46.1726 46.1727)"
+                  stroke="black"
+                  stroke-width="7"
+                ></circle>
+                <line
+                  x1="61.7089"
+                  y1="67.7837"
+                  x2="97.7088"
+                  y2="111.784"
+                  stroke="black"
+                  stroke-width="7"
+                ></line>
+              </svg>
+            </a>
+          </nav>
+      <div id="title"  class="title">Competitive Programming Solutions </div>
+      
+      <p style="background-color: white; border-radius: 15px; padding: 30px;" >
+        These are my Submissions / Solutions for the Codeforces Problems which i
+        have done for practice purpose and enhancing my DSA & Competitive
+        Programming Skills.
+      </p>
+      <input
+        type="text"
+        id="searchBar"
+        class="search-bar"
+        placeholder="Search problems..."
+        oninput="filterTable()"
+      />
+      <ul id="suggestions" class="suggestions"></ul>
+      <table id="problemsTable">
+        <tr>
+          <th>ID</th>
+          <th>Problem Name</th>
+          <th>Online Judge</th>
+          <th>Difficulty Level</th>
+          <th>Solution</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/231/problem/A"
+              target="_blank"
+              >Team</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/team.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/231/problem/B"
+              target="_blank"
+              >Magic, Wizardry and Wonders</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/Magic_Wizardry_and_Wonders.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/231/problem/B"
+              target="_blank"
+              >To Add or Not to Add</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/to_Add_or_Not_to_Add.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/231/problem/D"
+              target="_blank"
+              >Magic Box</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/magic_Box.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/228/problem/A"
+              target="_blank"
+              >Is your horseshoe on the other hoof?</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/is_your_horseshoe_on_the_other_hoof.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/228/problem/A"
+              target="_blank"
+              >Young Physicist</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/young_Physicist.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>
+            <a
+              href="http://codeforces.com/problemset/problem/263/A"
+              target="_blank"
+              >Beautiful Matrix</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/beautiful_Matrix.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>
+            <a
+              href="http://codeforces.com/problemset/problem/266/B"
+              target="_blank"
+              >Queue at the School</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/queue_at_the_School.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/32/problem/B"
+              target="_blank"
+              >Borze</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/borze.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-            
-            
-            
+        <tr>
+          <td>10</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/32/problem/B"
+              target="_blank"
+              >Beautiful Year</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/beautiful_Year.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-            
-        </table>
+        <tr>
+          <td>11</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/275/A"
+              target="_blank"
+              >Lights Out</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/lights_Out.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>12</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/59/A"
+              target="_blank"
+              >Word</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/word.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>13</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/281/A"
+              target="_blank"
+              >Word Capitalization</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/word_Capitalization.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>14</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/110/A"
+              target="_blank"
+              >Nearly Lucky Number</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/nearly_Lucky_Number.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>15</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/266/A"
+              target="_blank"
+              >Stones on the Table</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/stones_on_the_Table.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>16</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/80/A"
+              target="_blank"
+              >Panoramix's Prediction</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/panoramix's_Prediction.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>17</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/61/A"
+              target="_blank"
+              >Ultra-Fast Mathematician</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/ultra_Fast_Mathematician.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>18</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/233/A"
+              target="_blank"
+              >Perfect Permutation</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/perfect_Permutation.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>19</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/144/A"
+              target="_blank"
+              >Arrival of the General</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/arrival_of_the_General.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>20</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/200/B"
+              target="_blank"
+              >Drinks</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/drinks.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>21</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/148/A"
+              target="_blank"
+              >Insomnia cure</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/insomnia_cure.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>22</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/248/A"
+              target="_blank"
+              >Cupboards</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/cupboards.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>23</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/155/A"
+              target="_blank"
+              >I_love_\%username\%</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/i_love_username.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>24</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/116/A"
+              target="_blank"
+              >Tram</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/tram.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>25</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/339/A"
+              target="_blank"
+              >Helpful Maths</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/helpful_Maths.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>26</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/71/A"
+              target="_blank"
+              >Way Too Long Words</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/way_Too_Long_Words.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>27</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/236/A"
+              target="_blank"
+              >Boy or Girl</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/boy_or_Girl.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>28</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/141/A"
+              target="_blank"
+              >Amusing Joke</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/amusing_Joke.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>29</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/151/A"
+              target="_blank"
+              >Soft Drinking</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/soft_Drinking.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>30</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/133/A"
+              target="_blank"
+              >HQ9+</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/hq9.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>31</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/112/A"
+              target="_blank"
+              >Petya and Strings</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/petya_and_Strings.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>32</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/282/A"
+              target="_blank"
+              >Bit++</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/bit.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>33</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/227/B"
+              target="_blank"
+              >Effective Approach</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/effective_Approach.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>34</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/272/A"
+              target="_blank"
+              >Dima and Friends</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/dima_And_Friends.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>35</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/450/A"
+              target="_blank"
+              >Jzzhu and Children</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/jzzhu_and_Children.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>36</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/165/A"
+              target="_blank"
+              >Supercentral Point</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/supercentral_Point.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>37</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/2010/problem/B"
+              target="_blank"
+              >Three Brothers</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/three_Brothers.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>38</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/139/A"
+              target="_blank"
+              >Petr and Book</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/petr_and_Book.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>39</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/224/A"
+              target="_blank"
+              >Parallelepiped</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/parallelepiped.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>40</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/34/A"
+              target="_blank"
+              >Reconnaissance 2</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/reconnaissance_2.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>41</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/318/A"
+              target="_blank"
+              >Even Odds</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/even_Odds.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>42</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/205/A"
+              target="_blank"
+              >Little Elephant and Rozdil</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/little_Elephant_and_Rozdil.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>43</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/199/A"
+              target="_blank"
+              >Hexadecimal's theorem</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/hexadecimal_Theorem.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>44</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/352/A"
+              target="_blank"
+              >Jeff and Digits</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/jeff_and_Digits.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>45</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/339/B"
+              target="_blank"
+              >Xenia and Ringroad</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/xenia_and_Ringroad.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>46</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/320/A"
+              target="_blank"
+              >Magic Numbers</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/magic_Numbers.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>47</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/41/A"
+              target="_blank"
+              >Translation</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/translation.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/43/A"
+              target="_blank"
+              >Football</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/football.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>49</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/215/A"
+              target="_blank"
+              >Bicycle Chain</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/bicycle_Chain.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/34/B"
+              target="_blank"
+              >Sale</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/sale.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>51</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/214/A"
+              target="_blank"
+              >System of Equations</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/system_of_Equations.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>52</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/149/A"
+              target="_blank"
+              >Business Trip</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/business_Trip.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/208/A"
+              target="_blank"
+              >Dubstep</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/dubstep.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>54</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/219/A"
+              target="_blank"
+              >K-String</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/k_String.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>55</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/124/A"
+              target="_blank"
+              >The Number of Positions</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/the_Number_of_Positions.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>56</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/1916/problem/A"
+              target="_blank"
+              >Odd One Out</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/odd_One_Out.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+      </table>
     </div>
+   
 
     <script>
-        const searchBar = document.getElementById('searchBar');
-        const suggestions = document.getElementById('suggestions');
-        const problemsTable = document.getElementById('problemsTable');
+      const searchBar = document.getElementById("searchBar");
+      const suggestions = document.getElementById("suggestions");
+      const problemsTable = document.getElementById("problemsTable");
 
-        function filterTable() {
-            const filter = searchBar.value.toLowerCase();
-            const rows = problemsTable.getElementsByTagName('tr');
-            const suggestionItems = [];
+      function filterTable() {
+        const filter = searchBar.value.toLowerCase();
+        const rows = problemsTable.getElementsByTagName("tr");
+        const suggestionItems = [];
 
-            for (let i = 1; i < rows.length; i++) {
-                const problemName = rows[i].getElementsByTagName('td')[1].textContent.toLowerCase();
-                if (problemName.includes(filter.replace(/ /g, ''))) {
-                    rows[i].style.display = '';
-                    suggestionItems.push(problemName);
-                } else {
-                    rows[i].style.display = 'none';
-                }
-            }
-
-            if (filter === '') {
-                suggestions.style.display = 'none';
-            } else {
-                updateSuggestions(suggestionItems, filter);
-            }
+        for (let i = 1; i < rows.length; i++) {
+          const problemName = rows[i]
+            .getElementsByTagName("td")[1]
+            .textContent.toLowerCase();
+          if (problemName.includes(filter.replace(/ /g, ""))) {
+            rows[i].style.display = "";
+            suggestionItems.push(problemName);
+          } else {
+            rows[i].style.display = "none";
+          }
         }
 
-        function updateSuggestions(items, filter) {
-            suggestions.innerHTML = '';
-            const uniqueItems = [...new Set(items)];
-
-            uniqueItems.forEach(item => {
-                if (item.includes(filter.replace(/ /g, ''))) {
-                    const suggestion = document.createElement('li');
-                    suggestion.textContent = item;
-                    suggestion.onclick = () => {
-                        searchBar.value = suggestion.textContent;
-                        filterTable();
-                        suggestions.style.display = 'none';
-                    };
-                    suggestions.appendChild(suggestion);
-                }
-            });
-
-            if (suggestions.children.length > 0) {
-                suggestions.style.display = 'block';
-            } else {
-                suggestions.style.display = 'none';
-            }
+        if (filter === "") {
+          suggestions.style.display = "none";
+        } else {
+          updateSuggestions(suggestionItems, filter);
         }
+      }
+
+      function updateSuggestions(items, filter) {
+        suggestions.innerHTML = "";
+        const uniqueItems = [...new Set(items)];
+
+        uniqueItems.forEach((item) => {
+          if (item.includes(filter.replace(/ /g, ""))) {
+            const suggestion = document.createElement("li");
+            suggestion.textContent = item;
+            suggestion.onclick = () => {
+              searchBar.value = suggestion.textContent;
+              filterTable();
+              suggestions.style.display = "none";
+            };
+            suggestions.appendChild(suggestion);
+          }
+        });
+
+        if (suggestions.children.length > 0) {
+          suggestions.style.display = "block";
+        } else {
+          suggestions.style.display = "none";
+        }
+      }
     </script>
-</body>
+    
+  </body>
 </html>

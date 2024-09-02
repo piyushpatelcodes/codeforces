@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piyush Patel's Codeforces Calendar</title>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <style>
+      /* General body styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f4f3;
+        color: #333;
+      }
+
+      /* Header styling */
+      header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.5em;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Calendar container */
+      .calendar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Calendar iframe styling */
+      iframe {
+        width: 90%;
+        margin-bottom: 4%;
+        height: 600px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      /* Footer styling */
+      footer {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Modern footer link styling */
+      footer a {
+        color: #a7ffeb;
+        text-decoration: none;
+        padding: 0 10px;
+        transition: color 0.3s;
+      }
+
+      /* Footer link hover effect */
+      footer a:hover {
+        color: #64ffda;
+      }
+    </style>
+  </head>
+  <body>
+    <nav style="translate: 130px; margin-right: 10%" class="navigation-card">
+      <a href="index.html" class="tab">
+        <svg
+          class="svgIcon"
+          viewBox="0 0 104 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
+            stroke="black"
+            stroke-width="7"
+          ></path>
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/piyushpatelcodes/" class="tab">
+        <svg
+          width="104"
+          height="100"
+          viewBox="0 0 104 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="21.5"
+            y="3.5"
+            width="60"
+            height="60"
+            rx="30"
+            stroke="black"
+            stroke-width="7"
+          ></rect>
+          <g clip-path="url(#clip0_41_27)">
+            <mask
+              id="mask0_41_27"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="61"
+              width="104"
+              height="52"
+            >
+              <path
+                d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z"
+                fill="white"
+              ></path>
+            </mask>
+            <g mask="url(#mask0_41_27)">
+              <path
+                d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z"
+                fill="black"
+              ></path>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="clip0_41_27">
+              <rect
+                width="104"
+                height="39"
+                fill="white"
+                transform="translate(0 61)"
+              ></rect>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+
+      <a href="calendar.html" class="tab">
+        <svg
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- Outer rounded rectangle -->
+          <rect
+            x="10"
+            y="10"
+            width="84"
+            height="80"
+            rx="15"
+            stroke="black"
+            stroke-width="7"
+            fill="white"
+          ></rect>
+
+          <!-- Top bar of the calendar -->
+          <rect x="10" y="10" width="84" height="20" rx="5" fill="black"></rect>
+
+          <!-- Circles representing dates in the calendar -->
+          <circle cx="30" cy="45" r="4" fill="black"></circle>
+          <circle cx="50" cy="45" r="4" fill="black"></circle>
+          <circle cx="70" cy="45" r="4" fill="black"></circle>
+
+          <circle cx="30" cy="65" r="4" fill="black"></circle>
+          <circle cx="50" cy="65" r="4" fill="black"></circle>
+          <circle cx="70" cy="65" r="4" fill="black"></circle>
+
+          <circle cx="30" cy="85" r="4" fill="black"></circle>
+          <circle cx="50" cy="85" r="4" fill="black"></circle>
+          <circle cx="70" cy="85" r="4" fill="black"></circle>
+
+          <!-- Calendar rings -->
+          <line
+            x1="28"
+            y1="10"
+            x2="28"
+            y2="30"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+          ></line>
+          <line
+            x1="76"
+            y1="10"
+            x2="76"
+            y2="30"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+          ></line>
+        </svg>
+      </a>
+
+      <!-- calendar -->
+      <a href="#title" class="tab">
+        <svg
+          width="101"
+          height="114"
+          viewBox="0 0 101 114"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="46.1726"
+            cy="46.1727"
+            r="29.5497"
+            transform="rotate(36.0692 46.1726 46.1727)"
+            stroke="black"
+            stroke-width="7"
+          ></circle>
+          <line
+            x1="61.7089"
+            y1="67.7837"
+            x2="97.7088"
+            y2="111.784"
+            stroke="black"
+            stroke-width="7"
+          ></line>
+        </svg>
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header style="padding-top: 7%;" >Piyush Patel's Codeforces Calendar</header>
+
+    <!-- Calendar Container -->
+    <div class="calendar-container">
+      <iframe
+        src="https://calendar.google.com/calendar/embed?src=k23j233gtcvau7a8ulk2p360m4@group.calendar.google.com&amp;src=efcajlnqvdqjeoud2spsiphnqk@group.calendar.google.com&amp;color=%237986CB&amp;color=%23B39DDB&amp;ctz=Asia/Calcutta&amp;hl=en&amp;wkst=1"
+        style="margin-top: 20px"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2024 Piyush Patel. Connect with me on
+      <a href="https://www.linkedin.com/in/piyushpatelcodes/" target="_blank"
+        >LinkedIn</a
+      >
+      |
+      <a href="https://github.com/PiyushPatelCodes" target="_blank">GitHub</a> |
+      <a href="https://www.codeforces.com" target="_blank">Codeforces</a>
+    </footer>
+  </body>
+</html>
