@@ -462,6 +462,16 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/the_Number_of_Positions.java">Code</a></td>
 </tr>
 
+<tr>
+<td>56</td>
+<td><a href="https://codeforces.com/contest/1916/problem/A" target="_blank">Odd One Out</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/odd_One_Out.java">Code</a></td>
+</tr>
+
+
+
 </table>
   </center>
   </body>
