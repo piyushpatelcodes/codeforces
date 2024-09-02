@@ -406,7 +406,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td>2</td>
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/football.java">Code</a></td>
 </tr>
-
+<tr>
+<td>49</td>
+<td><a href="https://codeforces.com/problemset/problem/215/A" target="_blank">Bicycle Chain</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/bicycle_Chain.java">Code</a></td>
+</tr>
 
 </table>
   </center>
