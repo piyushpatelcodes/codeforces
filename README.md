@@ -506,6 +506,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/little_Elephant_and_Function.java">Code</a></td>
 </tr>
 
+<tr>
+<td>60</td>
+<td><a href="https://codeforces.com/problemset/problem/118/B" target="_blank">Present from Lena</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/present_from_Lena.java">Code</a></td>
+</tr>
 
 
 
