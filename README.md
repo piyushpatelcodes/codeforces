@@ -538,6 +538,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/chat_Room.java">Code</a></td>
 </tr>
 
+<tr>
+<td>64</td>
+<td><a href="https://codeforces.com/problemset/problem/218/B" target="_blank">Airport</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/airport.java">Code</a></td>
+</tr>
+
 
 
 
