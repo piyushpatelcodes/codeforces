@@ -550,7 +550,7 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td>65</td>
 <td><a href="DZY Loves Chessboard" target="_blank">DZY Loves Chessboard</a></td>
 <td>Codeforces</td>
-<td>2</td>
+<td>3</td>
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/dzy_Loves_Chessboard.java">Code</a></td>
 </tr>
 
