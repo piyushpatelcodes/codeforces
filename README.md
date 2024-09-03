@@ -522,6 +522,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/dragons.java">Code</a></td>
 </tr>
 
+<tr>
+<td>62</td>
+<td><a href="https://codeforces.com/problemset/problem/337/A" target="_blank">Puzzles</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/puzzles.java">Code</a></td>
+</tr>
+
+
 
 
 
