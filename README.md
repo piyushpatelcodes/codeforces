@@ -548,11 +548,20 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 
 <tr>
 <td>65</td>
-<td><a href="DZY Loves Chessboard" target="_blank">DZY Loves Chessboard</a></td>
+<td><a href="https://codeforces.com/problemset/problem/445/A" target="_blank">DZY Loves Chessboard</a></td>
 <td>Codeforces</td>
 <td>3</td>
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/dzy_Loves_Chessboard.java">Code</a></td>
 </tr>
+
+<tr>
+<td>66</td>
+<td><a href="https://codeforces.com/problemset/problem/459/B" target="_blank">Pashmak and Flowers</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/pashmak_and_Flowers.java">Code</a></td>
+</tr>
+
 
 
 
