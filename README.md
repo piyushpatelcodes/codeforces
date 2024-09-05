@@ -570,6 +570,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sail.java">Code</a></td>
 </tr>
 
+<tr>
+<td>68</td>
+<td><a href="https://codeforces.com/problemset/problem/222/A" target="_blank">Shooshuns and Sequence</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/shooshuns_and_Sequence.java">Code</a></td>
+</tr>
+
 
 
 
