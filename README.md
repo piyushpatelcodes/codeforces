@@ -586,6 +586,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/xenia_and_Divisors.java">Code</a></td>
 </tr>
 
+<tr>
+<td>70</td>
+<td><a href="https://codeforces.com/problemset/problem/43/B" target="_blank">Letter</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/letter.java">Code</a></td>
+</tr>
+
 
 
 
