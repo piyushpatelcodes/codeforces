@@ -618,6 +618,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/hungry_Sequence.java">Code</a></td>
 </tr>
 
+<tr>
+<td>74</td>
+<td><a href="https://codeforces.com/problemset/problem/242/B" target="_blank">Big Segment</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/big_Segment.java">Code</a></td>
+</tr>
+
+
 
 
 
