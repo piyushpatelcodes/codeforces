@@ -602,6 +602,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/kithara_and_Harukis_Gift.java">Code</a></td>
 </tr>
 
+<tr>
+<td>72</td>
+<td><a href="https://codeforces.com/problemset/problem/186/A" target="_blank">Comapring Strings</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/comparing_Strings.java">Code</a></td>
+</tr>
+
 
 
 
