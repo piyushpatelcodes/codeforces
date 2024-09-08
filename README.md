@@ -650,6 +650,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/fence.java">Code</a></td>
 </tr>
 
+<tr>
+<td>78</td>
+<td><a href="https://codeforces.com/problemset/problem/350/A" target="_blank">TL</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/tL.java">Code</a></td>
+</tr>
+
+
 
 
 
