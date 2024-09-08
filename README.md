@@ -658,6 +658,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/tL.java">Code</a></td>
 </tr>
 
+<tr>
+<td>79</td>
+<td><a href="https://codeforces.com/problemset/problem/246/B" target="_blank">Increase and Decrease</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/increase_and_Decrease.java">Code</a></td>
+</tr>
+
+
 
 
 
