@@ -642,6 +642,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/yaroslav_and_Permutations.java">Code</a></td>
 </tr>
 
+<tr>
+<td>77</td>
+<td><a href="https://codeforces.com/problemset/problem/363/B" target="_blank">Fence</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/fence.java">Code</a></td>
+</tr>
 
 
 
