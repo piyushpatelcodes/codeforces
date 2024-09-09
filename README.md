@@ -715,6 +715,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>85</td>
+<td><a href="https://codeforces.com/problemset/problem/353/A" target="_blank">Domino</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/domino.java">Code</a></td>
+</tr>
+
+
 
 
 
