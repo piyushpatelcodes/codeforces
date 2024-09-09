@@ -690,6 +690,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/boys_and_Girls.java">Code</a></td>
 </tr>
 
+<tr>
+<td>83</td>
+<td><a href="https://codeforces.com/problemset/problem/236/B" target="_blank">Easy Number Challenge</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/easy_Number_Challenge.java">Code</a></td>
+</tr>
+
 
 
 
