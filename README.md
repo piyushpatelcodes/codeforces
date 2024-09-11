@@ -773,6 +773,16 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>92</td>
+<td><a href="https://codeforces.com/problemset/problem/433/B" target="_blank">Kuriyama Mirai's Stones</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/kuriyama_Mirai_Stones.java">Code</a></td>
+</tr>
+
+
+
 
 
 
