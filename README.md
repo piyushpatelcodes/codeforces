@@ -747,6 +747,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/cut_Ribbon.java">Code</a></td>
 </tr>
 
+<tr>
+<td>89</td>
+<td><a href="https://codeforces.com/problemset/problem/287/A" target="_blank">IQ Test</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/iQ_Test.java">Code</a></td>
+</tr>
+
 
 
 
