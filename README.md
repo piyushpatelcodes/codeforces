@@ -755,6 +755,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/iQ_Test.java">Code</a></td>
 </tr>
 
+<tr>
+<td>90</td>
+<td><a href="https://codeforces.com/contest/630/problem/A" target="_blank">Again Twenty Five!</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/again_Twenty_Five.java">Code</a></td>
+</tr>
 
 
 
