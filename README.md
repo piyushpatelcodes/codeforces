@@ -739,6 +739,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/rank_List.java">Code</a></td>
 </tr>
 
+<tr>
+<td>88</td>
+<td><a href="https://codeforces.com/problemset/problem/189/A" target="_blank">Cut Ribbon</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/cut_Ribbon.java">Code</a></td>
+</tr>
 
 
 
