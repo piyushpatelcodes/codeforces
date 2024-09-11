@@ -799,6 +799,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>95</td>
+<td><a href="https://codeforces.com/contest/2008/problem/A" target="_blank">Sakurako's Exam</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sakurako_Exam.java">Code</a></td>
+</tr>
+
+
 
 
 
