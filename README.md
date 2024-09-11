@@ -790,6 +790,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/alternating_Sum_of_Numbers.java">Code</a></td>
 </tr>
 
+<tr>
+<td>94</td>
+<td><a href="https://codeforces.com/contest/2004/problem/A" target="_blank">Closest Point</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/closest_Point.java">Code</a></td>
+</tr>
+
 
 
 
