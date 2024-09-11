@@ -764,6 +764,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>91</td>
+<td><a href="https://codeforces.com/problemset/problem/285/C" target="_blank">Building Permutation</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/building_Permutation.java">Code</a></td>
+</tr>
+
+
 
 
 
