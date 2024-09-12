@@ -807,6 +807,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sakurako_Exam.java">Code</a></td>
 </tr>
 
+<tr>
+<td>96</td>
+<td><a href="https://codeforces.com/problemset/problem/230/B" target="_blank">T-primes</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/t_Primes.java">Code</a></td>
+</tr>
+
 
 
 
