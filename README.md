@@ -831,6 +831,15 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/flipping_Game.java">Code</a></td>
 </tr>
 
+<tr>
+<td>99</td>
+<td><a href="https://codeforces.com/problemset/problem/237/A" target="_blank">Free Cash</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/free_Cash.java">Code</a></td>
+</tr>
+
+
 
 
 
