@@ -815,6 +815,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/t_Primes.java">Code</a></td>
 </tr>
 
+<tr>
+<td>97</td>
+<td><a href="https://codeforces.com/problemset/problem/368/B" target="_blank">Sereja and Suffixes</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sereja_and_Suffixes.java">Code</a></td>
+</tr>
 
 
 
