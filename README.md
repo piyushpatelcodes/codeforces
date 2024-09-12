@@ -839,6 +839,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/free_Cash.java">Code</a></td>
 </tr>
 
+<tr>
+<td>100</td>
+<td><a href="https://codeforces.com/problemset/problem/2009/A" target="_blank">Minimize!</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/minimize.java">Code</a></td>
+</tr>
+
 
 
 
