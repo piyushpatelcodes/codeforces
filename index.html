@@ -77,92 +77,80 @@
       a:hover {
         text-decoration: underline;
       }
-     
     </style>
   </head>
   <body>
-    
-    
-    
-    <div  class="container">
-        <nav class="navigation-card">
-            <a href="#" class="tab">
-              <svg
-                class="svgIcon"
-                viewBox="0 0 104 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
-                  stroke="black"
-                  stroke-width="7"
-                ></path>
-              </svg>
-            </a>
-      
-            <a href="https://www.linkedin.com/in/piyushpatelcodes/" class="tab">
-              <svg
-                width="104"
-                height="100"
-                viewBox="0 0 104 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="21.5"
-                  y="3.5"
-                  width="60"
-                  height="60"
-                  rx="30"
-                  stroke="black"
-                  stroke-width="7"
-                ></rect>
-                <g clip-path="url(#clip0_41_27)">
-                  <mask
-                    id="mask0_41_27"
-                    style="mask-type: luminance"
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="61"
-                    width="104"
-                    height="52"
-                  >
-                    <path
-                      d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z"
-                      fill="white"
-                    ></path>
-                  </mask>
-                  <g mask="url(#mask0_41_27)">
-                    <path
-                      d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z"
-                      fill="black"
-                    ></path>
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_41_27">
-                    <rect
-                      width="104"
-                      height="39"
-                      fill="white"
-                      transform="translate(0 61)"
-                    ></rect>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-      
-            <a  href="calendar.html" class="tab">
-              <svg
-          width="110"
-          height="110"
-          viewBox="0 0 110 110"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-      >
-          <!-- Outer rounded rectangle -->
-          <rect
+    <!-- // counter starrt -->
+
+    <div class="card">
+      <div class="cardtitle">
+          <img src="https://miro.medium.com/v2/resize:fit:1200/1*iPZ00kImJY8oVioV5Dy75A.jpeg"
+          style="width: 120px; height: 80px;">
+      </div>
+      <div class="data number-container">
+          <p class="data number" id="animated-number" style="text-align: right; width: 30px; margin-left: 8px; font-weight: 700;">0</p>
+          <p class="data solved-text" style="margin-left: 5px; font-weight: 500;">Problems Solved</p>
+      </div>
+  </div>
+  
+
+    <!-- // counter end -->
+    <div class="container">
+      <nav class="navigation-card">
+        <a href="#" class="tab">
+          <svg
+            class="svgIcon"
+            viewBox="0 0 104 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
+              stroke="black"
+              stroke-width="7"
+            ></path>
+          </svg>
+        </a>
+
+        <!-- /* profile btn start */  -->
+        <button
+          onclick="redirectToLinkdin()"
+          id="btn-message"
+          class="button-message"
+        >
+          <div class="content-avatar">
+            <div class="status-user"></div>
+            <div class="avatar">
+              <img
+                src="/images/Picsart_24-01-21_15-20-04-001.jpg"
+                class="user-img"
+              />
+              <!-- <svg class="user-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z"></path></svg> -->
+            </div>
+          </div>
+          <div class="notice-content">
+            <div class="username">Piyush Patel</div>
+            <div class="lable-message">
+              Profile<img
+                src="https://d1bd8qlon9c8f3.cloudfront.net/py2zg5fj666zl2jwaltlickxsyyf"
+                class="number-message"
+              />
+            </div>
+            <div class="user-id">@piyushpatelcodes</div>
+          </div>
+        </button>
+        <!-- //progilebtn end -->
+
+        <a href="calendar.html" class="tab">
+          <svg
+            width="110"
+            height="110"
+            viewBox="0 0 110 110"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Outer rounded rectangle -->
+            <rect
               x="10"
               y="10"
               width="84"
@@ -171,70 +159,85 @@
               stroke="black"
               stroke-width="7"
               fill="white"
-          ></rect>
-      
-          <!-- Top bar of the calendar -->
-          <rect
+            ></rect>
+
+            <!-- Top bar of the calendar -->
+            <rect
               x="10"
               y="10"
               width="84"
               height="20"
               rx="5"
               fill="black"
-          ></rect>
-      
-          <!-- Circles representing dates in the calendar -->
-          <circle cx="30" cy="45" r="4" fill="black"></circle>
-          <circle cx="50" cy="45" r="4" fill="black"></circle>
-          <circle cx="70" cy="45" r="4" fill="black"></circle>
-      
-          <circle cx="30" cy="65" r="4" fill="black"></circle>
-          <circle cx="50" cy="65" r="4" fill="black"></circle>
-          <circle cx="70" cy="65" r="4" fill="black"></circle>
-      
-          <circle cx="30" cy="85" r="4" fill="black"></circle>
-          <circle cx="50" cy="85" r="4" fill="black"></circle>
-          <circle cx="70" cy="85" r="4" fill="black"></circle>
-      
-          <!-- Calendar rings -->
-          <line x1="28" y1="10" x2="28" y2="30" stroke="white" stroke-width="3" stroke-linecap="round"></line>
-          <line x1="76" y1="10" x2="76" y2="30" stroke="white" stroke-width="3" stroke-linecap="round"></line>
-      </svg>
-      
-              
-            </a>
-      
-            <!-- calendar -->
-            <a href="#title" class="tab">
-              <svg
-                width="101"
-                height="114"
-                viewBox="0 0 101 114"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="46.1726"
-                  cy="46.1727"
-                  r="29.5497"
-                  transform="rotate(36.0692 46.1726 46.1727)"
-                  stroke="black"
-                  stroke-width="7"
-                ></circle>
-                <line
-                  x1="61.7089"
-                  y1="67.7837"
-                  x2="97.7088"
-                  y2="111.784"
-                  stroke="black"
-                  stroke-width="7"
-                ></line>
-              </svg>
-            </a>
-          </nav>
-      <div id="title"  class="title">Competitive Programming Solutions </div>
-      
-      <p style="background-color: white; border-radius: 15px; padding: 30px;" >
+            ></rect>
+
+            <!-- Circles representing dates in the calendar -->
+            <circle cx="30" cy="45" r="4" fill="black"></circle>
+            <circle cx="50" cy="45" r="4" fill="black"></circle>
+            <circle cx="70" cy="45" r="4" fill="black"></circle>
+
+            <circle cx="30" cy="65" r="4" fill="black"></circle>
+            <circle cx="50" cy="65" r="4" fill="black"></circle>
+            <circle cx="70" cy="65" r="4" fill="black"></circle>
+
+            <circle cx="30" cy="85" r="4" fill="black"></circle>
+            <circle cx="50" cy="85" r="4" fill="black"></circle>
+            <circle cx="70" cy="85" r="4" fill="black"></circle>
+
+            <!-- Calendar rings -->
+            <line
+              x1="28"
+              y1="10"
+              x2="28"
+              y2="30"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+            ></line>
+            <line
+              x1="76"
+              y1="10"
+              x2="76"
+              y2="30"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+            ></line>
+          </svg>
+        </a>
+
+        <!-- calendar -->
+        <a href="#title" class="tab">
+          <svg
+            width="101"
+            height="114"
+            viewBox="0 0 101 114"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="46.1726"
+              cy="46.1727"
+              r="29.5497"
+              transform="rotate(36.0692 46.1726 46.1727)"
+              stroke="black"
+              stroke-width="7"
+            ></circle>
+            <line
+              x1="61.7089"
+              y1="67.7837"
+              x2="97.7088"
+              y2="111.784"
+              stroke="black"
+              stroke-width="7"
+            ></line>
+          </svg>
+        </a>
+      </nav>
+
+      <div id="title" style="margin-left: 30px;" class="title">Competitive Programming Solutions</div>
+
+      <p style="background-color: white; border-radius: 15px; padding: 30px">
         These are my Submissions / Solutions for the Codeforces Problems which i
         have done for practice purpose and enhancing my DSA & Competitive
         Programming Skills.
@@ -1304,393 +1307,862 @@
           </td>
         </tr>
 
-
-        
-<tr>
-<td>57</td>
-<td><a href="https://codeforces.com/problemset/problem/96/A" target="_blank">(Problem 96-A) Football</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/football96A.java">Code</a></td>
-</tr>
-
-<tr>
-<td>58</td>
-<td><a href="https://codeforces.com/problemset/problem/118/A" target="_blank">String Task</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/string_Task.java">Code</a></td>
-</tr>
-
-<tr>
-<td>59</td>
-<td><a href="https://codeforces.com/problemset/problem/221/A" target="_blank">Little Elephant and Function</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/little_Elephant_and_Function.java">Code</a></td>
-</tr>
-<tr>
-<td>60</td>
-<td><a href="https://codeforces.com/problemset/problem/118/B" target="_blank">Present from Lena</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/present_from_Lena.java">Code</a></td>
-</tr>
-<tr>
-<td>61</td>
-<td><a href="https://codeforces.com/problemset/problem/230/A" target="_blank">Dragons</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/dragons.java">Code</a></td>
-</tr>
+        <tr>
+          <td>57</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/96/A"
+              target="_blank"
+              >(Problem 96-A) Football</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/football96A.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
         <tr>
-<td>62</td>
-<td><a href="https://codeforces.com/problemset/problem/337/A" target="_blank">Puzzles</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/puzzles.java">Code</a></td>
-</tr>
-<tr>
-<td>63</td>
-<td><a href="https://codeforces.com/problemset/problem/58/A" target="_blank">Chat Room</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/chat_Room.java">Code</a></td>
-</tr>
+          <td>58</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/118/A"
+              target="_blank"
+              >String Task</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/string_Task.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
         <tr>
-<td>64</td>
-<td><a href="https://codeforces.com/problemset/problem/218/B" target="_blank">Airport</a></td>
-<td>Codeforces</td>
-<td>2</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/airport.java">Code</a></td>
-</tr>
-
-      <tr>
-<td>65</td>
-<td><a href="https://codeforces.com/problemset/problem/445/A" target="_blank">DZY Loves Chessboard</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/dzy_Loves_Chessboard.java">Code</a></td>
-</tr>
-
-<tr>
-<td>66</td>
-<td><a href="https://codeforces.com/problemset/problem/459/B" target="_blank">Pashmak and Flowers</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/pashmak_and_Flowers.java">Code</a></td>
-</tr>
+          <td>59</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/221/A"
+              target="_blank"
+              >Little Elephant and Function</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/little_Elephant_and_Function.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/118/B"
+              target="_blank"
+              >Present from Lena</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/present_from_Lena.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>61</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/230/A"
+              target="_blank"
+              >Dragons</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/dragons.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
         <tr>
-<td>67</td>
-<td><a href="https://codeforces.com/problemset/problem/298/B" target="_blank">Sail</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sail.java">Code</a></td>
-</tr>
-
-<tr>
-<td>68</td>
-<td><a href="https://codeforces.com/problemset/problem/222/A" target="_blank">Shooshuns and Sequence</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/shooshuns_and_Sequence.java">Code</a></td>
-</tr>
+          <td>62</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/337/A"
+              target="_blank"
+              >Puzzles</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/puzzles.java"
+              >Code</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>63</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/58/A"
+              target="_blank"
+              >Chat Room</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/chat_Room.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
         <tr>
-<td>69</td>
-<td><a href="https://codeforces.com/problemset/problem/342/A" target="_blank">Xenia and Divisors</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/xenia_and_Divisors.java">Code</a></td>
-</tr>
+          <td>64</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/218/B"
+              target="_blank"
+              >Airport</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>2</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/airport.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
         <tr>
-<td>70</td>
-<td><a href="https://codeforces.com/problemset/problem/43/B" target="_blank">Letter</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/letter.java">Code</a></td>
-</tr>
-        
-<tr>
-<td>71</td>
-<td><a href="https://codeforces.com/problemset/problem/433/A" target="_blank">Kitahara Haruki's Gift</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/kithara_and_Harukis_Gift.java">Code</a></td>
-</tr>
+          <td>65</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/445/A"
+              target="_blank"
+              >DZY Loves Chessboard</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/dzy_Loves_Chessboard.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
         <tr>
-<td>72</td>
-<td><a href="https://codeforces.com/problemset/problem/186/A" target="_blank">Comapring Strings</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/comparing_Strings.java">Code</a></td>
-</tr>
-
-
-        <tr>
-<td>73</td>
-<td><a href="https://codeforces.com/problemset/problem/327/B" target="_blank">Hungry Sequence</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/hungry_Sequence.java">Code</a></td>
-</tr>
-
-        <tr>
-<td>74</td>
-<td><a href="https://codeforces.com/problemset/problem/242/B" target="_blank">Big Segment</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/big_Segment.java">Code</a></td>
-</tr>
+          <td>66</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/459/B"
+              target="_blank"
+              >Pashmak and Flowers</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/pashmak_and_Flowers.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
         <tr>
-<td>75</td>
-<td><a href="https://codeforces.com/problemset/problem/258/A" target="_blank">Little Elephant and Bits</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/little_Elephant_and_Bits.java">Code</a></td>
-</tr>
+          <td>67</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/298/B"
+              target="_blank"
+              >Sail</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/sail.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
         <tr>
-<td>76</td>
-<td><a href="https://codeforces.com/problemset/problem/296/A" target="_blank">Yaroslav and Permutations</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/yaroslav_and_Permutations.java">Code</a></td>
-</tr>
+          <td>68</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/222/A"
+              target="_blank"
+              >Shooshuns and Sequence</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/shooshuns_and_Sequence.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
-<tr>
-<td>77</td>
-<td><a href="https://codeforces.com/problemset/problem/363/B" target="_blank">Fence</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/fence.java">Code</a></td>
-</tr>
+        <tr>
+          <td>69</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/342/A"
+              target="_blank"
+              >Xenia and Divisors</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/xenia_and_Divisors.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>78</td>
-<td><a href="https://codeforces.com/problemset/problem/350/A" target="_blank">TL</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/tL.java">Code</a></td>
-</tr>
-        
-<tr>
-<td>79</td>
-<td><a href="https://codeforces.com/problemset/problem/246/B" target="_blank">Increase and Decrease</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/increase_and_Decrease.java">Code</a></td>
-</tr>
-        
-<tr>
-<td>80</td>
-<td><a href="https://codeforces.com/problemset/problem/239/A" target="_blank">Two Bags of Potatoes</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/two_Bags_of_Potatoes.java">Code</a></td>
-</tr>
+        <tr>
+          <td>70</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/43/B"
+              target="_blank"
+              >Letter</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/letter.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
-<tr>
-<td>81</td>
-<td><a href="https://codeforces.com/problemset/problem/160/B" target="_blank">Unlucky Ticket</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/unlucky_Ticket.java">Code</a></td>
-</tr>
+        <tr>
+          <td>71</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/433/A"
+              target="_blank"
+              >Kitahara Haruki's Gift</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/kithara_and_Harukis_Gift.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>82</td>
-<td><a href="https://codeforces.com/problemset/problem/253/A" target="_blank">Boys and Girls</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/boys_and_Girls.java">Code</a></td>
-</tr>
+        <tr>
+          <td>72</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/186/A"
+              target="_blank"
+              >Comapring Strings</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/comparing_Strings.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>83</td>
-<td><a href="https://codeforces.com/problemset/problem/236/B" target="_blank">Easy Number Challenge</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/easy_Number_Challenge.java">Code</a></td>
-</tr>
+        <tr>
+          <td>73</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/327/B"
+              target="_blank"
+              >Hungry Sequence</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/hungry_Sequence.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
+        <tr>
+          <td>74</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/242/B"
+              target="_blank"
+              >Big Segment</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/big_Segment.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>84</td>
-<td><a href="https://codeforces.com/problemset/problem/304/A" target="_blank">Pythagorean Theorem II</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/pythagorean_TheoremII.java">Code</a></td>
-</tr>
-        
-<tr>
-<td>85</td>
-<td><a href="https://codeforces.com/problemset/problem/254/A" target="_blank">Cards with Numbers</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/cards_with_Numbers.java">Code</a></td>
-</tr>
+        <tr>
+          <td>75</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/258/A"
+              target="_blank"
+              >Little Elephant and Bits</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/little_Elephant_and_Bits.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
+        <tr>
+          <td>76</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/296/A"
+              target="_blank"
+              >Yaroslav and Permutations</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/yaroslav_and_Permutations.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
+        <tr>
+          <td>77</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/363/B"
+              target="_blank"
+              >Fence</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/fence.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>85</td>
-<td><a href="https://codeforces.com/problemset/problem/353/A" target="_blank">Domino</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/domino.java">Code</a></td>
-</tr>
+        <tr>
+          <td>78</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/350/A"
+              target="_blank"
+              >TL</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/tL.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
-<tr>
-<td>86</td>
-<td><a href="https://codeforces.com/problemset/problem/349/A" target="_blank">Cinema Line</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/cinema_Line.java">Code</a></td>
-</tr>
+        <tr>
+          <td>79</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/246/B"
+              target="_blank"
+              >Increase and Decrease</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/increase_and_Decrease.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
+        <tr>
+          <td>80</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/239/A"
+              target="_blank"
+              >Two Bags of Potatoes</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/two_Bags_of_Potatoes.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>87</td>
-<td><a href="https://codeforces.com/problemset/problem/166/A" target="_blank">Rank List</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/rank_List.java">Code</a></td>
-</tr>
+        <tr>
+          <td>81</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/160/B"
+              target="_blank"
+              >Unlucky Ticket</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/unlucky_Ticket.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
+        <tr>
+          <td>82</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/253/A"
+              target="_blank"
+              >Boys and Girls</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/boys_and_Girls.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>88</td>
-<td><a href="https://codeforces.com/problemset/problem/189/A" target="_blank">Cut Ribbon</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/cut_Ribbon.java">Code</a></td>
-</tr>
+        <tr>
+          <td>83</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/236/B"
+              target="_blank"
+              >Easy Number Challenge</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/easy_Number_Challenge.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
-<tr>
-<td>89</td>
-<td><a href="https://codeforces.com/problemset/problem/287/A" target="_blank">IQ Test</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/iQ_Test.java">Code</a></td>
-</tr>
+        <tr>
+          <td>84</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/304/A"
+              target="_blank"
+              >Pythagorean Theorem II</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/pythagorean_TheoremII.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
-<tr>
-<td>90</td>
-<td><a href="https://codeforces.com/contest/630/problem/A" target="_blank">Again Twenty Five!</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/again_Twenty_Five.java">Code</a></td>
-</tr>
+        <tr>
+          <td>85</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/254/A"
+              target="_blank"
+              >Cards with Numbers</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/cards_with_Numbers.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
+        <tr>
+          <td>85</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/353/A"
+              target="_blank"
+              >Domino</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/domino.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
+        <tr>
+          <td>86</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/349/A"
+              target="_blank"
+              >Cinema Line</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/cinema_Line.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>91</td>
-<td><a href="https://codeforces.com/problemset/problem/285/C" target="_blank">Building Permutation</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/building_Permutation.java">Code</a></td>
-</tr>
+        <tr>
+          <td>87</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/166/A"
+              target="_blank"
+              >Rank List</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/rank_List.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
-        
+        <tr>
+          <td>88</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/189/A"
+              target="_blank"
+              >Cut Ribbon</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/cut_Ribbon.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>92</td>
-<td><a href="https://codeforces.com/problemset/problem/433/B" target="_blank">Kuriyama Mirai's Stones</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/kuriyama_Mirai_Stones.java">Code</a></td>
-</tr>
+        <tr>
+          <td>89</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/287/A"
+              target="_blank"
+              >IQ Test</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/iQ_Test.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>93</td>
-<td><a href="https://codeforces.com/problemset/problem/2010/A" target="_blank">Alternating Sum of Numbers</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/alternating_Sum_of_Numbers.java">Code</a></td>
-</tr>
+        <tr>
+          <td>90</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/630/problem/A"
+              target="_blank"
+              >Again Twenty Five!</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/again_Twenty_Five.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
-<tr>
-<td>94</td>
-<td><a href="https://codeforces.com/contest/2004/problem/A" target="_blank">Closest Point</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/closest_Point.java">Code</a></td>
-</tr>
+        <tr>
+          <td>91</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/285/C"
+              target="_blank"
+              >Building Permutation</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/building_Permutation.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>95</td>
-<td><a href="https://codeforces.com/contest/2008/problem/A" target="_blank">Sakurako's Exam</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sakurako_Exam.java">Code</a></td>
-</tr>
-        
-<tr>
-<td>96</td>
-<td><a href="https://codeforces.com/problemset/problem/230/B" target="_blank">T-primes</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/t_Primes.java">Code</a></td>
-</tr>
+        <tr>
+          <td>92</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/433/B"
+              target="_blank"
+              >Kuriyama Mirai's Stones</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/kuriyama_Mirai_Stones.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>97</td>
-<td><a href="https://codeforces.com/problemset/problem/368/B" target="_blank">Sereja and Suffixes</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sereja_and_Suffixes.java">Code</a></td>
-</tr>
-        
-<tr>
-<td>98</td>
-<td><a href="https://codeforces.com/problemset/problem/327/A" target="_blank">Flipping Game</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/flipping_Game.java">Code</a></td>
-</tr>
+        <tr>
+          <td>93</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/2010/A"
+              target="_blank"
+              >Alternating Sum of Numbers</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/alternating_Sum_of_Numbers.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>99</td>
-<td><a href="https://codeforces.com/problemset/problem/237/A" target="_blank">Free Cash</a></td>
-<td>Codeforces</td>
-<td>3</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/free_Cash.java">Code</a></td>
-</tr>
+        <tr>
+          <td>94</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/2004/problem/A"
+              target="_blank"
+              >Closest Point</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/closest_Point.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
+        <tr>
+          <td>95</td>
+          <td>
+            <a
+              href="https://codeforces.com/contest/2008/problem/A"
+              target="_blank"
+              >Sakurako's Exam</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/sakurako_Exam.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
+        <tr>
+          <td>96</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/230/B"
+              target="_blank"
+              >T-primes</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/t_Primes.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-<tr>
-<td>100</td>
-<td><a href="https://codeforces.com/problemset/problem/2009/A" target="_blank">Minimize!</a></td>
-<td>Codeforces</td>
-<td>1</td>
-<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/minimize.java">Code</a></td>
-</tr>
+        <tr>
+          <td>97</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/368/B"
+              target="_blank"
+              >Sereja and Suffixes</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/sereja_and_Suffixes.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
+        <tr>
+          <td>98</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/327/A"
+              target="_blank"
+              >Flipping Game</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/flipping_Game.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
-        
+        <tr>
+          <td>99</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/237/A"
+              target="_blank"
+              >Free Cash</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>3</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/free_Cash.java"
+              >Code</a
+            >
+          </td>
+        </tr>
 
-        
+        <tr>
+          <td>100</td>
+          <td>
+            <a
+              href="https://codeforces.com/problemset/problem/2009/A"
+              target="_blank"
+              >Minimize!</a
+            >
+          </td>
+          <td>Codeforces</td>
+          <td>1</td>
+          <td>
+            <a
+              href="https://github.com/piyushpatelcodes/codeforces/blob/main/minimize.java"
+              >Code</a
+            >
+          </td>
+        </tr>
       </table>
     </div>
-   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
 
     <script>
       const searchBar = document.getElementById("searchBar");
@@ -1721,6 +2193,10 @@
         }
       }
 
+      function redirectToLinkdin() {
+        window.location.href = "https://www.linkedin.com/in/piyushpatelcodes/";
+      }
+
       function updateSuggestions(items, filter) {
         suggestions.innerHTML = "";
         const uniqueItems = [...new Set(items)];
@@ -1744,7 +2220,70 @@
           suggestions.style.display = "none";
         }
       }
+
+      // counter script start
+      // Function to increment the number with animation
+function incrementNumber(elementId, start, end, duration) {
+    let current = start;
+    const range = end - start;
+    const increment = end > start ? 1 : -1;
+    const stepTime = Math.abs(Math.floor(duration / range));
+
+    const timer = setInterval(() => {
+        current += increment;
+        document.getElementById(elementId).innerText = current;
+
+        if (current === end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
+
+// Function to fetch solved problem count from Codeforces API
+async function fetchSolvedProblems() {
+    const apiKey = '30b201471c95f946f74884146fe6ab46d8f82371';
+    const apiSecret = '96441abda8ad632a1f2d45e856ffea7830aae662';
+    const userHandle = 'piyushpatelcodes'; // Replace with actual user handle
+
+    const time = Math.floor(Date.now() / 1000); // Current time in seconds
+    const rand = '123456'; // Random string for apiSig
+    const methodName = 'user.status'; // Example method to get user's submissions
+
+    const apiSig = `${rand}/${methodName}?apiKey=${apiKey}&handle=${userHandle}&time=${time}#${apiSecret}`;
+    const hash = CryptoJS.SHA512(apiSig).toString(); // Use CryptoJS to hash the apiSig
+
+    const url = `https://codeforces.com/api/${methodName}?apiKey=${apiKey}&handle=${userHandle}&time=${time}&apiSig=${rand}${hash}`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        if (data.status === "OK") {
+            // Extract solved problems count from the data
+            const solvedProblemsCount = data.result.filter(submission => submission.verdict === "OK").length;
+
+            // Trigger the increment animation with dynamic solved problems count
+            incrementNumber('animated-number', 0, solvedProblemsCount-5, 2000);
+        } else {
+            console.error(data.comment);
+        }
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+// Animate number on page load based on API response
+window.onload = function() {
+    fetchSolvedProblems(); // Fetch the solved problems and animate number
+};
+
+// Optionally, you can trigger the animation on hover
+document.querySelector('.number-container').addEventListener('mouseover', function() {
+    fetchSolvedProblems(); // Fetch and re-trigger on hover
+});
+
+      // counter script end
+
+      
     </script>
-    
   </body>
 </html>
