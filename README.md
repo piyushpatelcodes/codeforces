@@ -882,6 +882,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>105</td>
+<td><a href="https://codeforces.com/problemset/problem/315/A" target="_blank">Sereja and Bottles</a></td>
+<td>Codeforces</td>
+<td>4</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sereja_and_Bottles.java">Code</a></td>
+</tr>
+
 
 
 
