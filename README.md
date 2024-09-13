@@ -865,6 +865,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>103</td>
+<td><a href="https://codeforces.com/problemset/problem/462/B" target="_blank">Appleman and Card Game</a></td>
+<td>Codeforces</td>
+<td>4</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/appleman_and_Card_Game.java">Code</a></td>
+</tr>
+
 
 
 
