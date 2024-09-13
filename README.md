@@ -890,6 +890,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sereja_and_Bottles.java">Code</a></td>
 </tr>
 
+<tr>
+<td>106</td>
+<td><a href="https://codeforces.com/problemset/problem/260/A" target="_blank">Adding Digits</a></td>
+<td>Codeforces</td>
+<td>4</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/adding_Digits.java">Code</a></td>
+</tr>
+
 
 
 
