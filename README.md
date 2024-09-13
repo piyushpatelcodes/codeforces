@@ -847,6 +847,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/minimize.java">Code</a></td>
 </tr>
 
+<tr>
+<td>101</td>
+<td><a href="https://codeforces.com/problemset/problem/289/B" target="_blank">Polo the Penguin and Matrix</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/polo_the_Penguin_and_Matrix.java">Code</a></td>
+</tr>
+
 
 
 
