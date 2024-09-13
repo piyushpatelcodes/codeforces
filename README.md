@@ -856,6 +856,14 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>102</td>
+<td><a href="https://codeforces.com/problemset/problem/450/B" target="_blank">Jzzhu and Sequences</a></td>
+<td>Codeforces</td>
+<td>4</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/jzzhu_and_Sequences.java">Code</a></td>
+</tr>
+
 
 
 
