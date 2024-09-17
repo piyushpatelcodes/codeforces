@@ -1,4 +1,5 @@
-# 100-questions-of-codeforces  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/piyushpatelcodes/codeforces&title=Repo%20Views" alt="Repo Views" />
+# 100-questions-of-codeforces  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/piyushpatelcodes/codeforces&title=Repo%20Views" alt="Repo Views" /> ![GitHub last commit](https://img.shields.io/github/last-commit/piyushpatelcodes/codeforces?path=README.md&display_timestamp=author&style=plastic&logo=github&logoColor=white&label=Last%20Commit&labelColor=black&color=indigo&cacheSeconds=3600&link=https://github.com/piyushpatelcodes/codeforces)
+
 
 These are my Submissions / Solutions for the Codeforces Problems which i have done for practice purpose and enhancing my DSA & Competitive Programming Skills.
 
