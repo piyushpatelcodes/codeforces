@@ -900,6 +900,48 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/adding_Digits.java">Code</a></td>
 </tr>
 
+<tr>
+<td>107</td>
+<td><a href="https://codeforces.com/contest/1352/problem/A" target="_blank">Sum of Round Numbers</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/sum_of_Round_Numbers.java">Code</a></td>
+</tr>
+
+<tr>
+<td>108</td>
+<td><a href="https://codeforces.com/contest/1352/problem/B" target="_blank">Same Parity Summands</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/same_Parity_Summands.java">Code</a></td>
+</tr>
+
+<tr>
+<td>109</td>
+<td><a href="https://codeforces.com/contest/1352/problem/C" target="_blank">K-th Not Divisible by n</a></td>
+<td>Codeforces</td>
+<td>3</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/kth_Not_Divisible_by_n.java">Code</a></td>
+</tr>
+
+<tr>
+<td>110</td>
+<td><a href="https://codeforces.com/contest/1352/problem/D" target="_blank">Alice, Bob and Candies</a></td>
+<td>Codeforces</td>
+<td>4</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/alice_Bob_and_Candies.java">Code</a></td>
+</tr>
+
+<tr>
+<td>111</td>
+<td><a href="https://codeforces.com/contest/1352/problem/E" target="_blank">Special Elements</a></td>
+<td>Codeforces</td>
+<td>5</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/special_Elements.java">Code</a></td>
+</tr>
+
+
+
 
 
 
