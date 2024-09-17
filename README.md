@@ -1,7 +1,8 @@
-# 100-questions-of-codeforces
+# 100-questions-of-codeforces  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/piyushpatelcodes/codeforces&title=Repo%20Views" alt="Repo Views" />
 
 These are my Submissions / Solutions for the Codeforces Problems which i have done for practice purpose and enhancing my DSA & Competitive Programming Skills.
 
+ 
 
 <html>
 <body>
