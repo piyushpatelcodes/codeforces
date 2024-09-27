@@ -1,5 +1,7 @@
 # 100-questions-of-codeforces   ![GitHub last commit](https://img.shields.io/github/last-commit/piyushpatelcodes/codeforces?path=README.md&display_timestamp=author&style=plastic&logo=github&logoColor=white&label=Last%20Commit&labelColor=black&color=indigo&cacheSeconds=3600&link=https://github.com/piyushpatelcodes/codeforces)
 
+[![piyushpatelcodess GitHub | Stats](https://stats.quira.sh/piyushpatelcodes/github?theme=dark)](https://quira.sh?utm_source=widgets&utm_campaign=piyushpatelcodes)
+
 
 These are my Submissions / Solutions for the Codeforces Problems which i have done for practice purpose and enhancing my DSA & Competitive Programming Skills.
 
