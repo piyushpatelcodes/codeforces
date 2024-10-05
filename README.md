@@ -966,6 +966,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>115</td>
+<td><a href="https://codeforces.com/problemset/problem/2013/A" target="_blank">Zhan's Blender</a></td>
+<td>Codeforces</td>
+<td>1</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/zahns_Blender.java">Code</a></td>
+</tr>
 
 
 
