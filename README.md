@@ -957,6 +957,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/find_Minimum_Operations.java">Code</a></td>
 </tr>
 
+<tr>
+<td>114</td>
+<td><a href="https://codeforces.com/problemset/problem/2014/B" target="_blank">Robin Hood and the Major Oak</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/robin_Hood_And_The_Major_Oak.java">Code</a></td>
+</tr>
 
 
 
