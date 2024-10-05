@@ -974,6 +974,13 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 <td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/zahns_Blender.java">Code</a></td>
 </tr>
 
+<tr>
+<td>116</td>
+<td><a href="https://codeforces.com/contest/2019/problem/A" target="_blank">Max Plus Size</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/max_Plus_Size.java">Code</a></td>
+</tr>
 
 
 
