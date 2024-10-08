@@ -983,6 +983,22 @@ These are my Submissions / Solutions for the Codeforces Problems which i have do
 </tr>
 
 
+<tr>
+<td>117</td>
+<td><a href="https://codeforces.com/problemset/problem/2014/A" target="_blank">Robin Helps</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/robin_Helps.java">Code</a></td>
+</tr>
+
+<tr>
+<td>118</td>
+<td><a href="https://codeforces.com/problemset/problem/2008/B" target="_blank">Square or Not</a></td>
+<td>Codeforces</td>
+<td>2</td>
+<td><a href="https://github.com/piyushpatelcodes/codeforces/blob/main/square_or_Not.java">Code</a></td>
+</tr>
+
 
 
 </table>
